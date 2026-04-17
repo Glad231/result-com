@@ -9,6 +9,7 @@ def home():
 @app.route('/result')
 def result():
     name = request.args.get('name', 'Гость')
+    return render_template('result.html', name=name)
     
     return render_template('result.html', name=name)
 
