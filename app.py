@@ -8,10 +8,10 @@ def home():
 
 @app.route('/result')
 def result():
-    name = request.args.get('name', 'Гость')
-    return render_template('result.html', name=name)
+    __name__ = request.args.get('name', 'Гость')
+    return render_template('result.html', __name__=__name__)
     
-    return render_template('result.html', name=name)
+    return render_template('result.html', __name__=__name__)
 
 if __name__ == '__main__':
     app.run(debug=True)
