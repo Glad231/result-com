@@ -15,7 +15,7 @@ def result():
 if __name__.lower() == "глеб":
     message = "Ты лучший 💀🔥"
 else:
-    message = f"Привет, {name} ❤️"
+    message = f"Привет, {__name__} ❤️"
 
 if __name__ == '__main__':
     app.run(debug=True)
