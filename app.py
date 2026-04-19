@@ -12,7 +12,7 @@ def result():
     
     return render_template('result.html', name=name)
     
-if name.lower() == "глеб":
+if __name__.lower() == "глеб":
     message = "Ты лучший 💀🔥"
 else:
     message = f"Привет, {name} ❤️"
