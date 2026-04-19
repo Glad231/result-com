@@ -8,7 +8,7 @@ def home():
 
 @app.route('/result')
 def result():
-    name = request.args.get('name', 'Гость')
+    __name__ = request.args.get('__name__', 'Гость')
     
     return render_template('result.html', name=name)
     
